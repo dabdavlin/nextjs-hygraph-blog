@@ -130,7 +130,7 @@ const PostDetail = ({ post }) => {
             <RichText content={post.content.raw.children} />
             <RichText
               content={post.content.raw.children}
-              references={post.content.references.url}
+              references={post.content.references}
               renenders={{
                 link: {
                   Post: ({ slug, children }) => {
